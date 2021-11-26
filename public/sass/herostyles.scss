@@ -1,0 +1,156 @@
+$primary-text: #ddd;
+
+.hero__content {
+  position: relative;
+  padding: 0 100px;
+  padding-top: 100px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__details {
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .countdown__wrapper {
+      @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+      font-family: 'Dosis', sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      color: #ddd;
+      font-weight: bold;
+      width: fit-content;
+      p {
+        letter-spacing: 4px;
+        font-size: 18px;
+      }
+      .countdown {
+        span {
+          text-shadow: 1px 1px 3px rgba(255, 248, 248, 0.2);
+          font-size: 5rem;
+          margin-left: 0.8rem;
+        }
+        span:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+    .registration__details {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+    }
+    .hackathon__details {
+      padding-top: 55px;
+      width: fit-content;
+      &__title {
+        font-family: lato;
+        font-style: italic;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 6rem;
+        span {
+          color: $primary-text;
+        }
+        span:first-of-type {
+          color: #b1151a;
+        }
+      }
+
+      &__discription {
+        display: flex;
+        line-height: 0.4;
+        justify-content: flex-end;
+        div {
+          color: $primary-text;
+          font-size: 16px;
+          letter-spacing: 1.6px;
+        }
+        margin-bottom: 50px;
+      }
+    }
+  }
+  &__banner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    .banner_img {
+      max-width: 40rem;
+      height: auto;
+      // margin-bottom: 20px;
+      opacity: 0.9;
+    }
+    &_slogan {
+      margin-top: 40px;
+      font-family: lato;
+      color: $primary-text;
+      font-size: 18px;
+      div {
+        letter-spacing: 2px;
+        text-align: center;
+        span {
+          margin-top: 50px;
+          padding: 0 15px;
+        }
+      }
+      .save_the_date {
+        font-size: 28px;
+        letter-spacing: 16px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .last-date-info {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.register,
+.discord {
+  color: $primary-text;
+  margin-right: 20px;
+  background: #ff416c;
+  background: -webkit-linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  box-shadow: 0 8px 6px -6px black;
+  transition: all 0.3s ease-in-out;
+  a {
+    color: inherit;
+  }
+}
+.register:not([disabled]),
+.discord:not([disabled]) {
+  outline: none;
+}
+.register:hover,
+.discord:hover {
+  background: linear-gradient(to right, darken(#ff416c, 3), darken(#ff4b2b, 3));
+  transform: scale(1.05);
+}
+
+@import 'chatbot';
+@import 'footer';
+@import 'custom-card';
+@import 'prizes';
+@import 'sponsorChallenges';
+
+// mobile must be in end;
+@import 'mobile';

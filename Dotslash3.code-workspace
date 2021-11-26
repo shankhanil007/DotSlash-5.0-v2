@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "liveSassCompile.settings.formats": [
+            {
+                "format": "compressed",
+                "extensionName": ".css",
+                "savePath": "/public/css",
+            }
+        ],
+        "liveSassCompile.settings.generateMap": false,
+    }
+}

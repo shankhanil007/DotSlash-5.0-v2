@@ -1,0 +1,33 @@
+#sponsorChallenges {
+  // custom
+  .flip {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    > .front,
+    > .back {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      color: white;
+      background-size: cover;
+      background-position: center;
+      height: auto;
+      padding: 3em;
+      background: #313131;
+      border-radius: 25px;
+      h2,
+      h1 {
+        color: #fff;
+      }
+      p {
+        line-height: 160%;
+        color: #fff;
+      }
+    }
+    .front {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}

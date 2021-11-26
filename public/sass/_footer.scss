@@ -1,0 +1,37 @@
+#footer {
+    position: relative;
+    background-image: url('../img/wave.svg');
+    height: 350px;
+    .wave_box{
+        width: 100%;          
+        position: absolute;
+        bottom: 20px;
+        span{
+            font-weight: 900;
+            font-family: lato;
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 4rem;
+            color: $primary-text;
+            vertical-align: middle;
+        }
+        span:first-of-type{
+            color: #b1151a;
+        }
+    }
+    .copyright{
+        color: #ddd;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+    .coc{
+        a{
+            font-weight: 700;
+            text-decoration: underline;
+            color:black;
+        }
+        a:hover{
+            color: #820507;
+        }
+    }
+}

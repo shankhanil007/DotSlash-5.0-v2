@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+.hero__content {
+  position: relative;
+  padding: 0 100px;
+  padding-top: 100px;
+}
+.hero__content .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero__content__details {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero__content__details .countdown__wrapper {
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #ddd;
+  font-weight: bold;
+  width: fit-content;
+}
+.hero__content__details .countdown__wrapper p {
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+.hero__content__details .countdown__wrapper .countdown span {
+  text-shadow: 1px 1px 3px rgba(255, 248, 248, 0.2);
+  font-size: 5rem;
+  margin-left: 0.8rem;
+}
+.hero__content__details .countdown__wrapper .countdown span:first-of-type {
+  margin-left: 0;
+}
+.hero__content__details .registration__details {
+  display: flex;
+  align-items: center;
+}
+.registration__details>*{
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.registration__details input[type="email"]{
+  color: rgb(31, 31, 31);
+  font-weight: 500;
+  width: 250px;
+  margin-right: 10px;
+}
+.registration__details input[type="submit"]{
+  cursor: pointer !important;
+  width: 120px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+.hero__content__details .hackathon__details {
+  padding-top: 55px;
+  width: fit-content;
+}
+.hero__content__details .hackathon__details__title {
+  font-family: lato;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 6rem;
+}
+.hero__content__details .hackathon__details__title span {
+  color: #ddd;
+}
+.hero__content__details .hackathon__details__title span:first-of-type {
+  color: #b1151a;
+}
+.hero__content__details .hackathon__details__discription {
+  display: flex;
+  line-height: 0.4;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.hero__content__details .hackathon__details__discription div {
+  color: #ddd;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+.hero__content__banner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 40px;
+}
+.hero__content__banner .banner_img {
+  max-width: 40rem;
+  height: auto;
+  opacity: 0.9;
+}
+.hero__content__banner_slogan {
+  margin-top: 50px;
+  margin-left: -35px;
+  font-family: lato;
+  color: #ddd;
+  font-size: 18px;
+}
+.hero__content__banner_slogan div {
+  letter-spacing: 2px;
+  text-align: center;
+}
+.hero__content__banner_slogan div span {
+  margin-top: 50px;
+  padding: 0 15px;
+}
+.hero__content__banner_slogan .save_the_date {
+  margin-top: -22px;
+  margin-left: 20px;
+  font-size: 23px;
+  letter-spacing: 12px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  animation-delay: 5.5s !important;
+}
+.hero__content__banner_slogan .last-date-info {
+  margin-bottom: 15px;
+}
+.register,
+.discord {
+  color: #ddd;
+  margin-right: 20px;
+  background: #ff416c;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  box-shadow: 0 8px 6px -6px black;
+  transition: all 0.3s ease-in-out;
+}
+.register a,
+.discord a {
+  color: inherit;
+}
+.register:not([disabled]),
+.discord:not([disabled]) {
+  outline: none;
+}
+.register:hover,
+.discord:hover {
+  background: linear-gradient(to right, #ff3260, #ff3e1c);
+  transform: scale(1.05);
+}
+.hero__content .chat {
+  /* backdrop-filter: blur(4px); */
+  font-family: lato, sans-serif;
+  border-radius: 15px;
+  color: black;
+  border-bottom: 1px solid #c1002c;
+  box-shadow: 0 5px 3px -2px #c1002c;
+  width: 400px;
+  height: 250px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+  display: flex;
+  background: radial-gradient(ellipse at bottom, #030119 0%, #00172c 100%);
+  /* display: none; */
+}
+.blue-button-mobile{
+  margin-left: 0 !important;
+  width: 312px;
+  display: none;
+}
+.hero__content .chat__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero__content .header {
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+  background: #c1002c;
+  background: linear-gradient(to right, #c1002c, #ab1a00);
+  color: #fff;
+  display: flex;
+  height: 60px;
+  padding: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 2;
+  transform: translate(0, 0);
+}
+.hero__content .header__members {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.hero__content .message {
+  display: none;
+  flex: 0 0 auto;
+  margin-bottom: 5px;
+}
+.hero__content .message--browser {
+  justify-content: flex-start;
+}
+.hero__content .message--browser .message__content {
+  background: #eee;
+}
+.hero__content .message--server {
+  justify-content: flex-end;
+}
+.hero__content .message--server .message__content {
+  background: #ff416c;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+  justify-content: flex-end;
+  text-align: right;
+}
+.hero__content .message__content {
+  border-radius: 15px;
+  min-height: 50px;
+  align-items: center;
+  display: inline-flex;
+  background: #fff;
+  padding: 10px;
+}
+.hero__content .message--left {
+  justify-content: center;
+}
+.hero__content .message--left .message__content {
+  background: #fff;
+  color: #aaaaaa;
+}
+.hero__content .message--typing .message__content div {
+  animation: wave 0.5s ease infinite;
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  background: #b3b3b3;
+  margin: 2px;
+}
+.hero__content .message--typing .message__content div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.hero__content .message--typing .message__content div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.hero__content .message--typing .message__content div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+@keyframes wave {
+  50% {
+    transform: translate(0, -150%);
+  }
+}
+#footer {
+  position: relative;
+  background-image: url("../img/wave.svg");
+  background-repeat: round;
+  height: 350px;
+}
+#footer .wave_box {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+#footer .wave_box span {
+  font-weight: 900;
+  font-family: lato;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #ddd;
+  vertical-align: middle;
+}
+#footer .wave_box span:first-of-type {
+  color: #b1151a;
+}
+#footer .copyright {
+  color: #ddd;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+#footer .coc a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: white;
+}
+#footer .coc a:hover {
+  color: #820507;
+}
+.flip {
+  position: relative;
+}
+.flip > .front,
+.flip > .back {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 1s;
+  transition-property: transform, opacity;
+}
+.flip > .front {
+  transform: rotateY(0deg);
+}
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+.flip.flip-vertical > .back {
+  transform: rotateX(-180deg);
+}
+#prizes .flip {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#prizes .flip > .front,
+#prizes .flip > .back {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 3em;
+  background: #313131;
+  border-radius: 25px;
+}
+#prizes .flip > .front h2,
+#prizes .flip > .front h1,
+#prizes .flip > .front h4,
+#prizes .flip > .back h2,
+#prizes .flip > .back h1,
+#prizes .flip > .back h4 {
+  color: #fff;
+}
+#prizes .flip > .front p,
+#prizes .flip > .back p {
+  line-height: 160%;
+  color: #fff;
+}
+#prizes .flip > .front li,
+#prizes .flip > .back li {
+  list-style-type: disc;
+}
+#prizes .flip .small {
+  height: 300px;
+}
+#prizes .flip .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#sponsorChallenges .flip {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#sponsorChallenges .flip > .front,
+#sponsorChallenges .flip > .back {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 2em;
+  background: #313131;
+  border-radius: 25px;
+  border: 3px solid #407bff;
+  box-shadow: 0 0 35px -15px #407bff,0 0 16px -8px rgba(0,0,0,.3),0 0 16px -6px rgba(0,0,0,.03);
+  transition: all .2s ease-in;
+  margin-bottom: 20px;
+}
+
+#sponsorChallenges .flip > .front:hover,
+#sponsorChallenges .flip > .back:hover  {
+  transform: scale(1.05)
+}
+#sponsorChallenges .flip > .front h2,
+#sponsorChallenges .flip > .front h1,
+#sponsorChallenges .flip > .back h2,
+#sponsorChallenges .flip > .back h1 {
+  color: #fff;
+}
+#sponsorChallenges .flip > .front p,
+#sponsorChallenges .flip > .back p {
+  line-height: 160%;
+  color: #fff;
+}
+#sponsorChallenges .flip .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .hero__content__details {
+    margin-left: 30px;
+    transform: scale(1.2);
+  }
+  
+  .chat {
+    transform: scale(1.3);
+    position: relative;
+    top: 7vh !important;
+    right: -5vw !important;
+  }
+  
+}
+@media(max-width: 1440px) and (min-width: 1300px){
+  .chat{
+    transform: scale(1.1);
+    position: relative;
+    top: 5vh !important;
+    right: -5vw !important;
+  }
+  .hero__content__banner_slogan{
+    margin-top: -30px !important;
+  }
+  
+}
+@media(max-width: 1300px) and (min-width: 1024px){
+  .chat{
+    position: relative;
+    top: 5vh !important;
+    right: -5vw !important;
+  }
+  .hero__content__banner_slogan{
+    margin-top: -15px !important;
+  }
+}
+
+@media(max-width:1023px) and (min-width:849px) {
+  .hero{
+    height: 900px !important;
+  }
+  .hero__content__details {
+    transform: scale(1.3);
+  }
+  .notify-me{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  .hero__content__banner_slogan{
+    margin-top: -5vh !important;
+    margin-left: 0 !important;
+  }
+  .chat{
+    margin-top: 20vh !important;
+  }
+}
+@media (max-width: 850px) and (min-width: 600px) {
+  .hero {
+    height: 950px !important;
+  }
+  .hero__content__details {
+    transform: scale(1.3);
+  }
+  .hero__content__banner_slogan{
+    margin-top: -5vh !important;
+    margin-left: 0 !important;
+  }
+  .notify-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+  .chat{
+    margin-top: 25vh !important;
+  }
+}
+@media (max-width: 600px) and (min-width: 425px) {
+  .hero {
+    height: 850px !important;
+  }
+  .hero__content__details {
+    transform: scale(1);
+  }
+  .registration__details>*{
+    margin-top: 15px;
+  }
+  .registration__details input[type="submit"]{
+    margin-left: -10px !important;
+    width: 250px;
+  }
+  .hero__content__banner_slogan{
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 425px) {
+  .hero {
+    height: 850px !important;
+  }
+  .chat {
+    width: 320px !important;
+    height: 225px !important;
+  }
+  .registration__details>*{
+    margin-top: 15px;
+  }
+  .registration__details input[type="submit"]{
+    margin-left: -10px !important;
+    width: 250px;
+  }
+  .hero__content__banner_slogan{
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    background-size: 1500px;
+    background-position: center;
+    height: 1200px;
+  }
+  .hero__content {
+    top: 50px;
+  }
+  .hero__content .row {
+    display: block;
+  }
+  .hero__content__details .chat {
+    backdrop-filter: unset;
+  }
+  .hero__content__details .hackathon__details {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__content__details .hackathon__details__title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero__content__details .countdown__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__content__details .countdown__wrapper p {
+    text-align: center;
+  }
+  .hero__content__details .registration__details {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero__content__details .chat {
+    margin: 30px auto;
+    max-width: 320px;
+  }
+  .hero__content__banner {
+    margin-left: 0;
+  }
+  .hero__content__banner .banner_img {
+    max-width: 200px;
+  }
+  #profile-owl.owl-theme .owl-nav {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .hero .hero__content {
+    margin: 0;
+    padding: 0 10px;
+  }
+  .hero .hero__content__details {
+    min-width: 300px;
+  }
+  .hero .hero__content__details .registration__details {
+    flex-direction: column;
+  }
+  .hero .hero__content__details .registration__details .register {
+    margin-bottom: 15px;
+  }
+  .hero .hero__content__details .countdown__wrapper p {
+    letter-spacing: 4px;
+    font-size: 14px;
+  }
+  .hero .hero__content__details .countdown__wrapper .countdown span {
+    font-size: 3rem;
+  }
+  .hero .hero__content__banner_slogan div span {
+    padding: 0 5px;
+  }
+  .hero .hero__content__banner_slogan .save_the_date {
+    font-size: 18px;
+    letter-spacing: 12px;
+    text-align: center;
+  }
+  .blue-button{
+    display: none;
+  }
+  .blue-button-mobile{
+    display: block;
+  }
+  #footer .wave_box span {
+    font-size: 24px;
+  }
+  #footer .contact-social a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .section-bg {
+    border-radius: 0;
+  }
+  #galery-owl.owl-theme .owl-nav {
+    display: none;
+  }
+  #become-sponsor .dotted-line {
+    display: none;
+  }
+  .profile {
+    flex-wrap: wrap !important;
+    padding: 0;
+    height: auto !important;
+  }
+  .profile .image-section {
+    width: 100%;
+    height: 400px !important;
+  }
+  .profile_image {
+    height: 100%;
+  }
+  .profile .content {
+    margin: 0;
+    width: 100%;
+  }
+  .profile .content-body {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 280px) {
+  .hero__content__details .chat {
+    width: 250px;
+  }
+  .hero__content .save_the_date {
+    letter-spacing: 8px !important;
+  }
+}

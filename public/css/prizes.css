@@ -155,7 +155,7 @@
   .card-front h4{
     justify-self: flex-end;
     margin-top: 15px;
-    opacity: 0.85;
+    /* opacity: 0.85; */
   }
   
   .card-back {

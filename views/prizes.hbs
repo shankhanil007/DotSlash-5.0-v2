@@ -125,46 +125,47 @@
 
        <div id="prizes" class="section" style="margin-top: 100px;">
         
-        <h3 class="title"><span style="color: white">Overall Prizes<W/span></h3>
-        
+        <h3 class="title"><span style="color: white">Prizes</span></h3>
         <div class="prizes-container">
-          <div class="prizes-navbar">
-            <h4 class="overall active">Overall</h4>
-            <h4 class="tracks">Track Prizes</h4>
-            <h4 class="swags">Swags for all</h4>
+          <div class="overall-title">
+            <h4><span># </span>Overall</h4>
           </div>
           <div class="overall-prizes show-flexbox">
             <div class="prize-info silver">
-              <img src="./img/silver-medal.png" alt="" />
+              <img src="https://hackon.tech/_nuxt/img/first.e505c83.svg" alt="" />
               <div class="details">
-                <h2>2nd Prize</h2>
-                <h3>Rs. 15,000 /-</h3>
+                <h2>1st Prize</h2>
+                <h3>Coming soon!</h3>
               </div>
             </div>
             <div class="prize-info gold">
-              <img src="./img/gold-medal.png" alt="" />
+              <img src="https://hackon.tech/_nuxt/img/second.3d5b667.svg" alt="" />
               <div class="details">
-                <h2>1st Prize</h2>
-                <h3>Rs. 20,000 /-</h3>
+                <h2>2nd Prize</h2>
+                <h3>Coming soon!</h3>
               </div>
             </div>
             <div class="prize-info bronze">
-              <img src="./img/bronze-medal.png" alt="" />
+              <img src="https://hackon.tech/_nuxt/img/third.8555758.svg" alt="" />
               <div class="details">
                 <h2>3rd Prize</h2>
-                <h3>Rs. 10,000 /-</h3>
+                <h3>Coming soon!</h3>
               </div>
             </div>
           </div>
-          <div class="swags-for-all">
+          <div class="sponsored-title">
+            <h4><span># </span>Sponsored Tracks</h4>
+          </div>
+          <div class="sponsered-tracks show-grid">
             <div class="flip-card-container">
               <div class="flip-card">
                 <div class="card-front"> 
-                  <img src="./img/stickers-swags.png" alt="">
+                  <img src="./img/polygon.png" alt="">
+                  <h4>Best hack on top of Ethereum</h4>
                 </div>
 
                 <div class="card-back">
-                  <h4>Cool GitHub Laptop Stickers</h4>
+                  <h4>10,000 INR  <br>(15,000 INR for integrating Polygon) for the best hack built on top of Ethereum </h4>
                 </div>
 
               </div>
@@ -172,11 +173,12 @@
             <div class="flip-card-container">
               <div class="flip-card">
                 <div class="card-front"> 
-                  <img src="./img/stickers-swags.png" alt="">
+                  <img id="celo" src="./img/celo.png" alt="">
+                  <h4>Best Dapp built with Celo</h4>
                 </div>
 
                 <div class="card-back">
-                  <h4>Cool GitHub Laptop Stickers</h4>
+                  <h4>20,000 INR <br>for best Dapp built on Celo</h4>
                 </div>
 
               </div>
@@ -184,11 +186,12 @@
             <div class="flip-card-container">
               <div class="flip-card">
                 <div class="card-front"> 
-                  <img src="./img/stickers-swags.png" alt="">
+                  <img id="tezos"src="./img/tezos.png" alt="">
+                  <h4>Best Dapp built with Tezos</h4>
                 </div>
 
                 <div class="card-back">
-                  <h4>Cool GitHub Laptop Stickers</h4>
+                  <h4>20,000 INR <br>for best Dapp built on Tezos</h4>
                 </div>
 
               </div>
@@ -196,11 +199,12 @@
             <div class="flip-card-container">
               <div class="flip-card">
                 <div class="card-front"> 
-                  <img src="./img/stickers-swags.png" alt="">
+                  <img src="./img/filecoin.png" alt="">
+                  <h4>Best Dapp built with Filecoin</h4>
                 </div>
 
                 <div class="card-back">
-                  <h4>Cool GitHub Laptop Stickers</h4>
+                  <h4>20,000 INR <br> for best use of IPFS and/or Filecoin</h4>
                 </div>
 
               </div>
@@ -208,11 +212,12 @@
             <div class="flip-card-container">
               <div class="flip-card">
                 <div class="card-front"> 
-                  <img src="./img/stickers-swags.png" alt="">
+                  <img id="tezos"src="./img/tezos.png" alt="">
+                  <h4>Best Dapp built with Tezos</h4>
                 </div>
 
                 <div class="card-back">
-                  <h4>Cool GitHub Laptop Stickers</h4>
+                  <h4>20,000 INR <br>for best Dapp built on Tezos</h4>
                 </div>
 
               </div>
@@ -220,15 +225,22 @@
             <div class="flip-card-container">
               <div class="flip-card">
                 <div class="card-front"> 
-                  <img src="./img/stickers-swags.png" alt="">
+                  <img src="./img/polygon.png" alt="">
+                  <h4>Best hack on top of Ethereum</h4>
                 </div>
 
                 <div class="card-back">
-                  <h4>Cool GitHub Laptop Stickers</h4>
+                  <h4>10,000 INR  <br>(15,000 INR for integrating Polygon) for the best hack built on top of Ethereum </h4>
                 </div>
 
               </div>
             </div>
+          </div>
+           <div class="swags-title">
+            <h4><span># </span>Swags Kit</h4>
+          </div>
+          <div class="swags-kit">
+
           </div>
         </div>
       </div>
@@ -307,7 +319,7 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/prizes.js"></script>
+    {{!-- <script src="js/prizes.js"></script> --}}
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"
     ></script>

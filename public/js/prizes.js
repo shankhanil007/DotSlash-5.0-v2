@@ -1,35 +1,35 @@
 const overallPrizes = document.querySelector('.overall-prizes');
+const sponseredTracks = document.querySelector('.sponsered-tracks');
 const swagsForAll = document.querySelector('.swags-for-all');
-// const trackPrizes = document.querySelector('.track-prizes');
 const overallTitle = document.querySelector('.overall');
-const swagsTitle = document.querySelector('.swags');
-const tracksTitle = document.querySelector('.tracks');
+const sponseredTitle = document.querySelector('.tracks');
+// const swagsTitle = document.querySelector('.swags');
 
 overallTitle.addEventListener('click', () => {
-    swagsTitle.classList.remove('active');
-    tracksTitle.classList.remove('active');
+    sponseredTitle.classList.remove('active');
+    // swagsTitle.classList.remove('active');
     overallTitle.classList.add('active');
     
-    swagsForAll.classList.remove('show-grid');
-    // trackPrizes.classList.remove('show-grid');
+    sponseredTracks.classList.remove('show-grid');
+    // swagsForAll.classList.remove('show-grid');
     overallPrizes.classList.add('show-flexbox');
 })
 
-swagsTitle.addEventListener('click', () => {
-    tracksTitle.classList.remove('active');
+sponseredTitle.addEventListener('click', () => {
+    // swagsTitle.classList.remove('active');
     overallTitle.classList.remove('active');
-    swagsTitle.classList.add('active');
+    sponseredTitle.classList.add('active');
     
     overallPrizes.classList.remove('show-flexbox');
-    // trackPrizes.classList.remove('show-grid');
-    swagsForAll.classList.add('show-grid');
+    // swagsForAll.classList.remove('show-grid');
+    sponseredTracks.classList.add('show-grid');
 })
-tracksTitle.addEventListener('click', () => {
-    swagsTitle.classList.remove('active');
-    overallTitle.classList.remove('active');
-    tracksTitle.classList.add('active');
+// swagsTitle.addEventListener('click', () => {
+//     sponseredTitle.classList.remove('active');
+//     overallTitle.classList.remove('active');
+//     swagsTitle.classList.add('active');
     
-    swagsForAll.classList.remove('show-grid');
-    // trackPrizes.classList.remove('show-grid');
-    overallPrizes.classList.remove('show-flexbox');
-})
+//     sponseredTracks.classList.remove('show-grid');
+//     // swagsForAll.classList.remove('show-grid');
+//     overallPrizes.classList.remove('show-flexbox');
+// })

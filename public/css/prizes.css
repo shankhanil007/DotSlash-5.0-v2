@@ -6,6 +6,24 @@
     padding: 1.5em;
     padding-bottom: 50px;
 }
+#prizes-home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.view-prizes{
+  background: #ff6d3a;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.view-prizes a{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.view-prizes a:hover{
+  color: white;
+}
 #prizes .title{
   font-size: 4rem;
   margin-bottom: 25px;

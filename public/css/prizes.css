@@ -34,7 +34,7 @@
   width: 55vw;
 }
 .swags-title::after{
-  width: 65vw;
+  width: 59vw;
 }
 .overall-title h4, .sponsored-title h4, .swags-title h4{
     font-size: 3rem;
@@ -76,7 +76,7 @@
 .active{
     opacity: 1 !important;
 }
-.sponsered-tracks{
+.sponsered-tracks, .swags-kit{
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -93,6 +93,12 @@
     height: 225px;
     perspective: 1000px;
     margin-top: 30px;
+  }
+  .flip-card-container.swag{
+    height: 250px;
+  }
+  .flip-card-container.swag .card-front img{
+    width: 50%;
   }
   
   .flip-card {
@@ -185,10 +191,10 @@
     width: 95%;
     margin: 20px 0px;
   }
-  .overall-title, .sponsored-title{
+  .overall-title, .sponsored-title, .swags-title{
     margin-left: 0px;
   }
-  .overall-title::after, .sponsored-title::after{
+  .overall-title::after, .sponsored-title::after, .swags-title::after{
     top: 100%;
     left: 0;
     width: 75vw;
@@ -196,18 +202,17 @@
   .silver{
     margin-top: 30px;
   }
-  .sponsered-tracks{
+  .sponsered-tracks, .swags-kit{
     display: grid;
     width: 90vw;
     grid-template-columns: 1fr 1fr;
   }
   #celo{
     transform: scale(0.9);
-    margin-top: -40px;
   }
 }
 @media(max-width: 700px){
-  .sponsered-tracks{
+  .sponsered-tracks, .swags-kit{
     width: 80vw;
     grid-template-columns: 1fr;
   }
@@ -218,8 +223,9 @@
   }
   .details h2{
     font-size: 2.5rem;
+    white-space: nowrap;
   }
-  .sponsered-tracks{
+  .sponsered-tracks, .swags-kit{
     width: 90vw;
     grid-template-columns: 1fr;
   }

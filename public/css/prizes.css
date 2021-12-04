@@ -63,6 +63,24 @@
 .prizes-for-all::after{
   width: 62vw;
 }
+.fun-prize-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto !important;
+  background: #1f2438;
+  padding: 16px;
+  border-radius: 10px;
+}
+.fun-prize-card img{
+  width: 75%;
+  height: auto;
+}
+.fun-prize-card h4{
+  margin-top: 10px;
+  text-align: center;
+}
 .overall-title h4, .sponsored-title h4, .swags-title h4{
     font-size: 3rem;
     cursor: pointer;
@@ -220,6 +238,20 @@
     border-radius: 50%;
     background: white;
   }
+  .for-all h4 p{
+    position: relative;
+    margin-left: 13px;
+  }
+  .for-all h4 p::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+  }
   .card-back h4 ul{
     list-style: none;
   }
@@ -290,7 +322,8 @@
     grid-template-columns: 1fr;
   }
   .for-all h4 p{
-    margin: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 

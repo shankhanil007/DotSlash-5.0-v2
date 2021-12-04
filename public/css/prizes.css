@@ -55,7 +55,13 @@
   width: 55vw;
 }
 .swags-title::after{
-  width: 59vw;
+  width: 52vw;
+}
+.fun-prizes::after{
+  width: 64.5vw;
+}
+.prizes-for-all::after{
+  width: 62vw;
 }
 .overall-title h4, .sponsored-title h4, .swags-title h4{
     font-size: 3rem;
@@ -134,7 +140,15 @@
   .flip-card-container:focus-within .flip-card {
     transform: rotateY(180deg);
   }
-  
+  .for-all{
+    width: 500px;
+    height: auto;
+    background: #1f2438;
+    display: flex;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 10px;
+  }
   .card-front,
   .card-back {
     padding: 4rem 2rem 3rem;
@@ -256,6 +270,9 @@
     width: 80vw;
     grid-template-columns: 1fr;
   }
+  .for-all{
+    width: auto;
+  }
 }
 @media(max-width: 475px){
   .prizes-container{
@@ -271,6 +288,9 @@
   .sponsered-tracks, .swags-kit{
     width: 90vw;
     grid-template-columns: 1fr;
+  }
+  .for-all h4 p{
+    margin: 15px 0px;
   }
 }
 
